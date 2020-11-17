@@ -2,7 +2,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class Lab2 {
-    // функция для выравнивания и вывода столбцов
+    // функция для выравнивания и вывода массива
     public static void print2dArr(String[][] arr) {
         System.out.println("\nВыравненный массив:\n");
         for (int i = 0; i < arr.length; i++) {
@@ -17,11 +17,11 @@ public class Lab2 {
         int sum = 0;
         for (int i = 1; i < arr.length; i++)
             sum += Integer.parseInt(arr[i][1]);
+            // эти страны
         System.out.println("\nОбщее кол-во иммигрантов в этих странах: " + sum);
     }
 
     // Функция для подсчета общего процента иммигрантов в мире которые приходится на
-    // эти страны
     public static void percentImm(String[][] arr) {
         double sum = 0;
         for (int i = 1; i < arr.length; i++)
